@@ -6,7 +6,7 @@ import { ShellEmbedded } from '@org/common';
 
 @Component({
   imports: [SidebarLayoutComponent, RouterModule],
-  selector: 'app-root',
+  selector: 'shell-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [

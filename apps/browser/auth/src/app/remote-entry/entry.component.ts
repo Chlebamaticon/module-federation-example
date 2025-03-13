@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthWelcomeComponent } from './auth-welcome.component';
+import { ShellEmbedded } from '@org/common';
 
 @Component({
-  imports: [CommonModule, AuthWelcomeComponent],
+  imports: [CommonModule],
   selector: 'auth-entry',
-  template: `<auth-welcome></auth-welcome>`,
+  template: `<h2>Auth {{isShellEmbedded ? 'Embedded' : 'Standalone'}}</h2>`,
 })
-export class RemoteEntryComponent {}
+export class RemoteEntryComponent {
+  constructor(
+    @Inject(ShellEmbedded) @Optional() readonly isShellEmbedded = false
+  ) {}
+}

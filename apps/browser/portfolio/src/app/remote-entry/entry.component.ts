@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
+import { ShellEmbedded } from '@org/common';
 
 @Component({
-  imports: [CommonModule, NxWelcomeComponent],
-  selector: 'app-portfolio-entry',
-  template: `<app-nx-welcome></app-nx-welcome>`,
+  imports: [CommonModule],
+  selector: 'portfolio-entry',
+  template: `<h2>Portfolio {{isShellEmbedded ? 'Embedded' : 'Standalone'}}</h2>`,
 })
-export class RemoteEntryComponent {}
+export class RemoteEntryComponent {
+  constructor(
+    @Inject(ShellEmbedded) @Optional() readonly isShellEmbedded = false
+  ) {}
+}
