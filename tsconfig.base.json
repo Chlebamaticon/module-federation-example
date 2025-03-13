@@ -1,0 +1,49 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@org/auth": ["packages/browser/auth/src/index.ts"],
+      "@org/common": ["packages/browser/common/src/index.ts"],
+      "@org/design-system": ["packages/design-system/src/index.ts"],
+      "@org/design-system/button": [
+        "packages/design-system/button/src/index.ts"
+      ],
+      "@org/design-system/card": ["packages/design-system/card/src/index.ts"],
+      "@org/design-system/common": [
+        "packages/design-system/common/src/index.ts"
+      ],
+      "@org/design-system/input": ["packages/design-system/input/src/index.ts"],
+      "@org/design-system/layout": [
+        "packages/design-system/layout/src/index.ts"
+      ],
+      "@org/design-system/theme": ["packages/design-system/theme/src/index.ts"],
+      "@org/design-system/typography": [
+        "packages/design-system/typography/src/index.ts"
+      ],
+      "@org/store": ["packages/browser/store/src/index.ts"],
+      "apps/browser/auth/Routes": [
+        "apps/browser/auth/src/app/remote-entry/entry.routes.ts"
+      ],
+      "apps/browser/chat/Routes": [
+        "apps/browser/chat/src/app/remote-entry/entry.routes.ts"
+      ],
+      "apps/browser/portfolio/Routes": [
+        "apps/browser/portfolio/src/app/remote-entry/entry.routes.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
