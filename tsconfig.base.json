@@ -33,6 +33,7 @@
       "@org/design-system/typography": [
         "packages/design-system/typography/src/index.ts"
       ],
+      "@org/dtos": ["packages/shared/dtos/src/index.ts"],
       "@org/store": ["packages/browser/store/src/index.ts"],
       "apps/browser/auth/Routes": [
         "apps/browser/auth/src/app/remote-entry/entry.routes.ts"
@@ -42,7 +43,8 @@
       ],
       "apps/browser/portfolio/Routes": [
         "apps/browser/portfolio/src/app/remote-entry/entry.routes.ts"
-      ]
+      ],
+      "events": ["packages/server/events/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
