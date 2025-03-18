@@ -1,8 +1,8 @@
 export default {
-  displayName: 'chat',
-  preset: '../jest.preset.js',
+  displayName: 'browser-chat',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../coverage/chat',
+  coverageDirectory: '../../../coverage/apps/browser/chat',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

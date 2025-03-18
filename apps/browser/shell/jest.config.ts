@@ -1,8 +1,8 @@
 export default {
-  displayName: 'shell',
-  preset: '../jest.preset.js',
+  displayName: 'browser-shell',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../coverage/shell',
+  coverageDirectory: '../../../coverage/apps/browser/shell',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

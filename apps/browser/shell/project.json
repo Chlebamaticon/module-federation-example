@@ -13,7 +13,7 @@
         "outputPath": "dist/apps/browser/shell/browser",
         "index": "apps/browser/shell/src/index.html",
         "main": "apps/browser/shell/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [],
         "tsConfig": "apps/browser/shell/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -66,10 +66,10 @@
       },
       "configurations": {
         "production": {
-          "buildTarget": "shell:build:production"
+          "buildTarget": "browser-shell:build:production"
         },
         "development": {
-          "buildTarget": "shell:build:development"
+          "buildTarget": "browser-shell:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "shell:build"
+        "buildTarget": "browser-shell:build"
       }
     },
     "lint": {
@@ -93,7 +93,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "shell:build",
+        "buildTarget": "browser-shell:build",
         "port": 4200,
         "spa": true
       }
@@ -102,7 +102,7 @@
       "dependsOn": ["build"],
       "executor": "@nx/angular:webpack-server",
       "options": {
-        "outputPath": "dist/shell/server",
+        "outputPath": "dist/apps/browser/shell/server",
         "main": "apps/browser/shell/src/server.ts",
         "tsConfig": "apps/browser/shell/tsconfig.server.json",
         "inlineStyleLanguage": "scss",
@@ -127,12 +127,12 @@
       "executor": "@nx/angular:module-federation-dev-ssr",
       "configurations": {
         "development": {
-          "browserTarget": "shell:build:development",
-          "serverTarget": "shell:server:development"
+          "browserTarget": "browser-shell:build:development",
+          "serverTarget": "browser-shell:server:development"
         },
         "production": {
-          "browserTarget": "shell:build:production",
-          "serverTarget": "shell:server:production"
+          "browserTarget": "browser-shell:build:production",
+          "serverTarget": "browser-shell:server:production"
         }
       },
       "defaultConfiguration": "development"
@@ -144,12 +144,12 @@
       },
       "configurations": {
         "development": {
-          "browserTarget": "shell:build:development",
-          "serverTarget": "shell:server:development"
+          "browserTarget": "browser-shell:build:development",
+          "serverTarget": "browser-shell:server:development"
         },
         "production": {
-          "browserTarget": "shell:build:production",
-          "serverTarget": "shell:server:production"
+          "browserTarget": "browser-shell:build:production",
+          "serverTarget": "browser-shell:server:production"
         }
       },
       "defaultConfiguration": "production"

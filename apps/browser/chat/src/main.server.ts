@@ -1,5 +1,3 @@
-import 'zone.js/node';
-
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr/node';
 import * as express from 'express';
@@ -11,8 +9,8 @@ import bootstrap from './bootstrap.server';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const browserBundles = join(process.cwd(), 'dist/chat/browser');
-  const serverBundles = join(process.cwd(), 'dist/chat/server');
+  const browserBundles = join(process.cwd(), 'dist/apps/browser/chat/browser');
+  const serverBundles = join(process.cwd(), 'dist/apps/browser/chat/server');
   const indexHtml = existsSync(join(browserBundles, 'index.original.html'))
     ? join(browserBundles, 'index.original.html')
     : join(browserBundles, 'index.html');
@@ -64,7 +62,9 @@ function run(): void {
      * This message allows Nx to determine when the Remote is ready to be
      * consumed by the Host.
      */
-    process.send && process.send('nx.server.ready');
+    if (process.send) {
+      process.send('nx.server.ready');
+    }
   });
 }
 
