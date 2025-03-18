@@ -20,7 +20,9 @@
       "options": {
         "browserTarget": "design-system:build-storybook",
         "configDir": "packages/design-system/.storybook",
-        "experimentalZoneless": true
+        "experimentalZoneless": true,
+        "compodoc": true,
+        "compodocArgs": ["-e", "json", "-d", "packages/design-system"]
       }
     },
     "build-storybook": {
@@ -29,7 +31,9 @@
         "browserTarget": "design-system:build-storybook",
         "configDir": "packages/design-system/.storybook",
         "outputDir": "packages/design-system/storybook-static",
-        "experimentalZoneless": true
+        "experimentalZoneless": true,
+        "compodoc": true,
+        "compodocArgs": ["-e", "json", "-d", "packages/design-system"]
       }
     },
     "build": {

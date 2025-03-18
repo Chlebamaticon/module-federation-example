@@ -1,0 +1,688 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "callbacks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  onClick: fn(),\n}"
+            },
+            {
+                "name": "callbacks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  onClick: fn(),\n}"
+            },
+            {
+                "name": "callbacks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  onClick: fn(),\n}"
+            },
+            {
+                "name": "callbacks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  onClick: fn(),\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+            },
+            {
+                "name": "Ghost",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'ghost',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\n  title: 'Design System/Components/Button',\n  component: ButtonComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CardComponent>",
+                "defaultValue": "{\n  title: 'Design System/Components/Card',\n  component: CardComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.\\*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TextareaComponent>",
+                "defaultValue": "{\n  title: 'Design System/Components/Textarea',\n  component: TextareaComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SidebarComponent>",
+                "defaultValue": "{\n  title: 'Design System/Components/Sidebar',\n  component: SidebarComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+            },
+            {
+                "name": "Outline",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'outline',\n  },\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {},\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'primary',\n  },\n}"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'secondary',\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CardComponent>",
+                "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TextareaComponent>",
+                "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<SidebarComponent>",
+                "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "packages/design-system/button/src/lib/button/button.stories.ts": [
+                {
+                    "name": "callbacks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  onClick: fn(),\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+                },
+                {
+                    "name": "Ghost",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'ghost',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonComponent>",
+                    "defaultValue": "{\n  title: 'Design System/Components/Button',\n  component: ButtonComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+                },
+                {
+                    "name": "Outline",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'outline',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'primary',\n  },\n}"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'secondary',\n  },\n}"
+                }
+            ],
+            "packages/design-system/card/src/lib/card/card.stories.ts": [
+                {
+                    "name": "callbacks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  onClick: fn(),\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CardComponent>",
+                    "defaultValue": "{\n  title: 'Design System/Components/Card',\n  component: CardComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.\\*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+                }
+            ],
+            "packages/design-system/input/src/lib/textarea/textarea.stories.ts": [
+                {
+                    "name": "callbacks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  onClick: fn(),\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TextareaComponent>",
+                    "defaultValue": "{\n  title: 'Design System/Components/Textarea',\n  component: TextareaComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+                }
+            ],
+            "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts": [
+                {
+                    "name": "callbacks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  onClick: fn(),\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'standard',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<SidebarComponent>",
+                    "defaultValue": "{\n  title: 'Design System/Components/Sidebar',\n  component: SidebarComponent,\n  //👇 Our exports that end in \"Data\" are not stories.\n  excludeStories: /.*Data$/,\n  tags: ['autodocs'],\n  args: {\n    ...callbacks,\n  },\n}"
+                }
+            ],
+            "packages/design-system/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "packages/design-system/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {},\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "packages/design-system/button/src/lib/button/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "packages/design-system/button/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "packages/design-system/card/src/lib/card/card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CardComponent>",
+                    "file": "packages/design-system/card/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "packages/design-system/input/src/lib/textarea/textarea.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TextareaComponent>",
+                    "file": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SidebarComponent>",
+                    "file": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "packages/design-system/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "callbacks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Ghost",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Outline",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/button/src/lib/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "callbacks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/card/src/lib/card/card.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "callbacks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/input/src/lib/textarea/textarea.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "callbacks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "packages/design-system/layout/src/lib/sidebar/sidebar.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
