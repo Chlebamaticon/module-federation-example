@@ -1,7 +1,7 @@
 {
   "name": "server-workflow",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/server/system-workflow/src",
+  "sourceRoot": "apps/server/workflow/src",
   "projectType": "application",
   "tags": ["microservice"],
   "targets": {
@@ -38,7 +38,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/server/system-workflow/jest.config.ts"
+        "jestConfig": "apps/server/workflow/jest.config.ts"
       }
     }
   }

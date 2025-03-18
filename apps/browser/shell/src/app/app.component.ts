@@ -2,7 +2,7 @@ import { Component, Inject, Optional } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SidebarLayoutComponent } from './sidebar-layout.component';
 
-import { ShellEmbedded } from '@org/common';
+import { ShellEmbedded } from '@inveniam/common';
 
 @Component({
   imports: [SidebarLayoutComponent, RouterModule],

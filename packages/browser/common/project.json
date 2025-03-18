@@ -1,5 +1,5 @@
 {
-  "name": "browser-common",
+  "name": "packages-browser-common",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/browser/common/src",
   "prefix": "lib",

@@ -1,7 +1,7 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
-  name: 'auth',
+  name: 'browser-auth',
   exposes: {
     './Routes': 'apps/browser/auth/src/app/remote-entry/entry.routes.ts',
   },

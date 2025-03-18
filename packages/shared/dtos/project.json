@@ -14,7 +14,7 @@
         "tsConfig": "packages/shared/dtos/tsconfig.lib.json",
         "format": ["cjs"],
         "assets": ["packages/shared/dtos/*.md"],
-        "generatePackageJson": true
+        "generatePackageJson": false
       }
     },
     "test": {

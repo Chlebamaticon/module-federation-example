@@ -1,5 +1,5 @@
 {
-  "name": "protobuf",
+  "name": "packages-server-protobuf",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/server/protobuf/src",
   "projectType": "library",
@@ -21,7 +21,7 @@
             "output": "/proto"
           }
         ],
-        "generatePackageJson": true
+        "generatePackageJson": false
       }
     },
     "test": {

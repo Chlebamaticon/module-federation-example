@@ -15,26 +15,29 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@org/auth": ["packages/browser/auth/src/index.ts"],
-      "@org/common": ["packages/browser/common/src/index.ts"],
-      "@org/design-system": ["packages/design-system/src/index.ts"],
-      "@org/design-system/button": [
+      "@inveniam/auth": ["packages/browser/auth/src/index.ts"],
+      "@inveniam/common": ["packages/browser/common/src/index.ts"],
+      "@inveniam/design-system": ["packages/design-system/src/index.ts"],
+      "@inveniam/design-system/button": [
         "packages/design-system/button/src/index.ts"
       ],
-      "@org/design-system/card": ["packages/design-system/card/src/index.ts"],
-      "@org/design-system/common": [
+      "@inveniam/design-system/card": ["packages/design-system/card/src/index.ts"],
+      "@inveniam/design-system/common": [
         "packages/design-system/common/src/index.ts"
       ],
-      "@org/design-system/input": ["packages/design-system/input/src/index.ts"],
-      "@org/design-system/layout": [
+      "@inveniam/design-system/input": ["packages/design-system/input/src/index.ts"],
+      "@inveniam/design-system/layout": [
         "packages/design-system/layout/src/index.ts"
       ],
-      "@org/design-system/theme": ["packages/design-system/theme/src/index.ts"],
-      "@org/design-system/typography": [
+      "@inveniam/design-system/theme": ["packages/design-system/theme/src/index.ts"],
+      "@inveniam/design-system/typography": [
         "packages/design-system/typography/src/index.ts"
       ],
-      "@org/dtos": ["packages/shared/dtos/src/index.ts"],
-      "@org/store": ["packages/browser/store/src/index.ts"],
+      "@inveniam/dtos": ["packages/shared/dtos/src/index.ts"],
+      "@inveniam/store": ["packages/browser/store/src/index.ts"],
+      "@inveniam/server-events": ["packages/server/events/src/index.ts"],
+      "@inveniam/server-protobuf": ["packages/server/protobuf/src/index.ts"],
+      "@inveniam/server-protobuf/proto/*": ["packages/server/protobuf/src/lib/*"],
       "apps/browser/auth/Routes": [
         "apps/browser/auth/src/app/remote-entry/entry.routes.ts"
       ],
@@ -44,8 +47,6 @@
       "apps/browser/portfolio/Routes": [
         "apps/browser/portfolio/src/app/remote-entry/entry.routes.ts"
       ],
-      "@org/server-events": ["packages/server/events/src/index.ts"],
-      "@org/server-protobuf": ["packages/server/protobuf/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,1 +1,1 @@
-export * from './lib/browser-store/browser-store.component';
+export * from './lib/store';

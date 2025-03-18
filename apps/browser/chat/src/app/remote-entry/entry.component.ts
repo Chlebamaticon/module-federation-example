@@ -1,7 +1,7 @@
 import { Component, Inject, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ShellEmbedded } from '@org/common';
+import { ShellEmbedded } from '@inveniam/common';
 
 @Component({
   imports: [CommonModule],

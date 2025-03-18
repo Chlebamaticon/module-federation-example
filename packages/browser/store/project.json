@@ -1,5 +1,5 @@
 {
-  "name": "browser-store",
+  "name": "packages-browser-store",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/browser/store/src",
   "prefix": "lib",

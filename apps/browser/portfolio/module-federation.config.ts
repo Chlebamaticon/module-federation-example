@@ -1,7 +1,7 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
-  name: 'portfolio',
+  name: 'browser-portfolio',
   exposes: {
     './Routes': 'apps/browser/portfolio/src/app/remote-entry/entry.routes.ts',
   },

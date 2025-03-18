@@ -1,5 +1,5 @@
 {
-  "name": "@org/dtos",
+  "name": "@inveniam/dtos",
   "version": "0.0.1",
   "dependencies": {},
   "type": "commonjs",

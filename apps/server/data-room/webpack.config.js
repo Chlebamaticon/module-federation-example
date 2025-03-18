@@ -5,6 +5,14 @@ module.exports = {
   output: {
     path: join(__dirname, '../../../dist/apps/server/data-room'),
   },
+  module: {
+    rules: [
+      {
+        test: /\.proto$/i,
+        use: 'raw-loader',
+      }
+    ]
+  },
   plugins: [
     new NxAppWebpackPlugin({
       target: 'node',

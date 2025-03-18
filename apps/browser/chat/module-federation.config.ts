@@ -1,7 +1,7 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
-  name: 'chat',
+  name: 'browser-chat',
   exposes: {
     './Routes': 'apps/browser/chat/src/app/remote-entry/entry.routes.ts',
   },
