@@ -83,18 +83,41 @@
     }
   },
   "generators": {
-    "@nx/angular:application": {
-      "e2eTestRunner": "none",
+    "@nx/angular:host": {
+      "ssr": true,
+      "e2eTestRunner": "playwright",
       "linter": "eslint",
       "style": "scss",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "tags": ["env:browser", "type:browser"]
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "publishable": true,
+      "buildable": true,
+      "tags": ["env:browser", "type:package"]
     },
     "@nx/angular:component": {
       "style": "css"
+    },
+    "@nx/nest:application": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "tags": ["env:server", "type:server"]
+    },
+    "@nx/nest:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "publishable": true,
+      "buildable": true,
+      "tags": ["env:server", "type:package"]
+    },
+    "@nx/js:library": {
+      "bundler": "esbuild",
+      "compiler": "tsc",
+      "linter": "eslint",
+      "tags": ["type:package"]
     }
   },
   "release": {
