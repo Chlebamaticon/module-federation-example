@@ -15,6 +15,23 @@
   },
   "tags": [],
   "targets": {
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "browserTarget": "design-system:build-storybook",
+        "configDir": "packages/design-system/.storybook",
+        "experimentalZoneless": true
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "options": {
+        "browserTarget": "design-system:build-storybook",
+        "configDir": "packages/design-system/.storybook",
+        "outputDir": "packages/design-system/storybook-static",
+        "experimentalZoneless": true
+      }
+    },
     "build": {
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
