@@ -44,7 +44,8 @@
       "apps/browser/portfolio/Routes": [
         "apps/browser/portfolio/src/app/remote-entry/entry.routes.ts"
       ],
-      "events": ["packages/server/events/src/index.ts"]
+      "@org/server-events": ["packages/server/events/src/index.ts"],
+      "@org/server-protobuf": ["packages/server/protobuf/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

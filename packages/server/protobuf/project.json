@@ -1,7 +1,7 @@
 {
-  "name": "events",
+  "name": "protobuf",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/server/events/src",
+  "sourceRoot": "packages/server/protobuf/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,12 +9,17 @@
       "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/server/events",
-        "main": "packages/server/events/src/index.ts",
-        "tsConfig": "packages/server/events/tsconfig.lib.json",
+        "outputPath": "dist/packages/server/protobuf",
+        "main": "packages/server/protobuf/src/index.ts",
+        "tsConfig": "packages/server/protobuf/tsconfig.lib.json",
         "format": ["cjs"],
         "assets": [
-          "packages/server/events/*.md"
+          "packages/server/protobuf/*.md",
+          {
+            "input": "packages/server/protobuf/src/lib",
+            "glob": "**/*.proto",
+            "output": "/proto"
+          }
         ],
         "generatePackageJson": true
       }
@@ -23,7 +28,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/server/events/jest.config.ts"
+        "jestConfig": "packages/server/protobuf/jest.config.ts"
       }
     }
   }
