@@ -5,7 +5,8 @@ on:
     branches:
       - master
   pull_request:
-
+    types:
+      - opened
 permissions:
   actions: read
   contents: read
@@ -16,10 +17,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # By default, PRs will be checked-out based on the Merge Commit, but we want the actual branch HEAD.
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+      - uses: volta-cli/action@v4
+        with:
+          package-json-path: '${{ github.workspace }}/package.json'
+
       # Cache node_modules
-      - uses: actions/setup-node@v4
+      - name: Use the package manager cache if available
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
@@ -32,3 +40,8 @@ jobs:
       # - run: npx nx-cloud record -- echo Hello World
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
       - run: npx nx affected -t lint test build
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ github.event.pull_request.merged }}
+        with:
+          path: dist
