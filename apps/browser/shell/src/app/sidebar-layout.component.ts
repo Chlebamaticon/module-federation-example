@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
       </div>
       <div class="layout__navbar"></div>
       <div class="layout__content">
-        <router-outlet></router-outlet>
+        <ng-content></ng-content>
       </div>
     </div>
   `,
@@ -36,8 +36,9 @@ import { RouterModule } from '@angular/router';
         grid-template-columns: min-content 1fr;
         grid-template-rows: min-content 1fr;
 
-        grid-template-areas:  'sidebar navbar'
-                              'sidebar content';
+        grid-template-areas:
+          'sidebar navbar'
+          'sidebar content';
 
         &__sidebar {
           grid-area: sidebar;
@@ -75,7 +76,7 @@ import { RouterModule } from '@angular/router';
           margin-bottom: 0.25rem;
         }
       }
-    `
-  ]
+    `,
+  ],
 })
 export class SidebarLayoutComponent {}

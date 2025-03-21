@@ -1,8 +1,8 @@
 import { Component, Inject, Optional } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SidebarLayoutComponent } from './sidebar-layout.component';
 
 import { ShellEmbedded } from '@inveniam/common';
+import { SidebarLayoutComponent } from './sidebar-layout.component';
 
 @Component({
   imports: [SidebarLayoutComponent, RouterModule],
@@ -13,8 +13,8 @@ import { ShellEmbedded } from '@inveniam/common';
     {
       provide: ShellEmbedded,
       useValue: true,
-    }
-  ]
+    },
+  ],
 })
 export class AppComponent {
   title = 'shell';
