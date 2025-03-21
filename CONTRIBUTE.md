@@ -41,7 +41,15 @@ The following policy had been applied across the board and any exception to that
 
 Nx workspace allows you to tag library, or application with tags. Those tags are later used by `@nx/enforce-module-boundaries` to deduct from project graph what imports are allowed, and what are not.
 
-Tags used within the workspace are; 1. `package-shared`, 2. `package-browser`, 3. `package-server`, 4. `package-evm`, 5. `package-design-system`, 6. `application-browser`, 7. `application-server`, 8. `application-evm`,
+Tags used within the workspace are;
+    1. `package-shared`,
+    2. `package-browser`,
+    3. `package-server`,
+    4. `package-evm`,
+    5. `package-design-system`,
+    6. `application-browser`,
+    7. `application-server`,
+    8. `application-evm`,
 
 Each relatio is one-directional, therefore none dependency from "env-specific" package can leak into "env-agnostic" packages.
 
