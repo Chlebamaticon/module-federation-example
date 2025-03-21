@@ -11,31 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  setup:
+  main:
     runs-on: ubuntu-latest
-    name: Affected Matrix
-    outputs:
-      hasChanges: ${{ steps.affected.outputs.hasChanges }}
-      matrix: ${{ steps.affected.outputs.matrix }}
-    steps:
-      - name: Calculate affected projects
-        uses: e-square-io/nx-affected-matrix@v2
-        id: affected
-        with:
-          targets: 'lint,test,build'
-          maxDistribution: 3
-          workingDirectory: ''
-          args: ''
-
-  execute:
-    name: ${{ matrix.target }}
-    if: ${{ fromJSON(needs.setup.outputs.hasChanges) }}
-    needs: [setup]
-    runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.target == 'test' }}
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJSON(needs.setup.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,14 +25,10 @@ jobs:
           cache: 'npm'
 
       - run: npm ci --legacy-peer-deps
-      # - uses: nrwl/nx-set-shas@v4
 
-      - name: Execute
-        uses: e-square-io/nx-distributed-task@v2
-        id: execute
-        with:
-          target: ${{ matrix.target }}
-          projects: ${{ matrix.projects }}
-          uploadOutputs: true
-          nxCloud: false
-          args: ''
+      - uses: nrwl/nx-set-shas@v4
+
+      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
+      # - run: npx nx-cloud record -- echo Hello World
+      # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
+      - run: npx nx affected -t lint test build
