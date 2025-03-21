@@ -13,10 +13,13 @@ The following policy had been applied across the board and any exception to that
         packages-shared["packages/shared/*"]
     end
 
+    subgraph design-system["Design System Packages"]
+        packages-design-system["packages/design-system/*"]
+    end
+
     subgraph packages["Env-specific Packages"]
         packages-server["packages/server/*"]
         packages-browser["packages/browser/*"]
-        packages-design-system["packages/design-system/*"]
         packages-evm["packages/evm/*"]
     end
 
@@ -38,4 +41,12 @@ The following policy had been applied across the board and any exception to that
 
 Nx workspace allows you to tag library, or application with tags. Those tags are later used by `@nx/enforce-module-boundaries` to deduct from project graph what imports are allowed, and what are not.
 
-Tags used within the workspace are; 1. `package-shared`, 2. `package-browser`, 3. `package-server`, 4. `package-evm`, 5. `application-browser`, 6. `application-server`, 7. `application-evm`,
+Tags used within the workspace are; 1. `package-shared`, 2. `package-browser`, 3. `package-server`, 4. `package-evm`, 5. `package-design-system`, 6. `application-browser`, 7. `application-server`, 8. `application-evm`,
+
+Each relatio is one-directional, therefore none dependency from "env-specific" package can leak into "env-agnostic" packages.
+
+Unique package is "design-system" that should not have any dependency on any of the packages to make sure that design-system is not getting business logic leaked inside.
+
+> ⚠ Anytime this document mentions package please think of our internally built packages not the one pulled from NPM. NPM Packages should be refered exactly as "NPM Package".
+
+## CI/CD Setup
