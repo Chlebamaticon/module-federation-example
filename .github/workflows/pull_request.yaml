@@ -15,8 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # By default, PRs will be checked-out based on the Merge Commit, but we want the actual branch HEAD.
-          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
       - uses: volta-cli/action@v4
