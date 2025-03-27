@@ -23,6 +23,7 @@ export const events = {
   'organization:created': {},
   'portfolio:created': {},
   'deal:created': {},
+  'deal:updated': {},
 };
 
 export const eventNames = Object.keys(events) as EventName[];
