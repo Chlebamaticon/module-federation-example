@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/server/events/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["packages:server"],
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
@@ -13,9 +13,7 @@
         "main": "packages/server/events/src/index.ts",
         "tsConfig": "packages/server/events/tsconfig.lib.json",
         "format": ["cjs"],
-        "assets": [
-          "packages/server/events/*.md"
-        ],
+        "assets": ["packages/server/events/*.md"],
         "generatePackageJson": true
       }
     },

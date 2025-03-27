@@ -13,7 +13,7 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["packages:browser"],
   "targets": {
     "build": {
       "executor": "@nx/angular:package",

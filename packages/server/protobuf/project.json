@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/server/protobuf/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["packages:server"],
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",

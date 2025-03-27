@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ButtonComponent } from '@inveniam/design-system';
 
 @Component({
   selector: 'shell-sidebar-layout',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ButtonComponent],
   template: `
     <div class="layout">
       <div class="layout__sidebar">
@@ -14,6 +15,8 @@ import { RouterModule } from '@angular/router';
           <li><a routerLink="portfolio">Portfolio</a></li>
           <li><a routerLink="chat">Chat</a></li>
         </ul>
+
+        <inv-button>Log in</inv-button>
       </div>
       <div class="layout__navbar"></div>
       <div class="layout__content">

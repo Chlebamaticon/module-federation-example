@@ -20,6 +20,30 @@ module.exports = [
               sourceTag: '*',
               onlyDependOnLibsWithTags: ['*'],
             },
+            {
+              sourceTag: 'application:browser',
+              onlyDependOnLibsWithTags: ['packages:browser', 'packages:shared'],
+            },
+            {
+              sourceTag: 'application:server',
+              onlyDependOnLibsWithTags: ['packages:server', 'packages:shared'],
+            },
+            {
+              sourceTag: 'packages:shared',
+              onlyDependOnLibsWithTags: ['packages:shared'],
+            },
+            {
+              sourceTag: 'packages:browser',
+              onlyDependOnLibsWithTags: ['packages:browser', 'packages:shared'],
+            },
+            {
+              sourceTag: 'packages:server',
+              onlyDependOnLibsWithTags: ['packages:server', 'packages:shared'],
+            },
+            {
+              sourceTag: 'packages:design-system',
+              onlyDependOnLibsWithTags: ['packages:design-system'],
+            },
           ],
         },
       ],
