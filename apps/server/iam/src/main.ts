@@ -20,7 +20,8 @@ async function bootstrap() {
     events['organization:created'],
     events['portfolio:created'],
     events['deal:created'],
-    events['deal:updated']
+    events['deal:updated'],
+    'testing is a key!'
   );
 
   Logger.log(
