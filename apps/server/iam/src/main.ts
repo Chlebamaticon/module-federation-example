@@ -19,7 +19,8 @@ async function bootstrap() {
     events['user:created'],
     events['organization:created'],
     events['portfolio:created'],
-    events['deal:created']
+    events['deal:created'],
+    events['deal:updated']
   );
 
   Logger.log(
